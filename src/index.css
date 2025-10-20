@@ -1,0 +1,33 @@
+/* index.css */
+@import "tailwindcss";
+
+/* make `dark:` respond to .dark on <html> */
+@custom-variant dark (&:where(.dark, .dark *));  /* <-- add this line */
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --brand-deep:#062016;
+  --brand-teal:#11604b;
+  --brand-bg:#eff0ea;
+}
+
+/* Font utility classes to use in JSX */
+.font-display{ font-family: "Cormorant Garamond", serif; }
+.font-body{ font-family: "Libre Baskerville", serif; }
+
+/* Classic small-caps helper (like your sample) */
+.small-caps{
+  font-variant: small-caps;
+  letter-spacing:.08em;
+}
+
+/* Subtle paragraph rhythm */
+.copy{
+  line-height:1.8;
+  letter-spacing:.01em;
+}
