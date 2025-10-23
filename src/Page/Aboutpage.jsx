@@ -42,7 +42,7 @@ function AboutBanner() {
     <div ref={wrapRef} className="relative h-[300px] md:h-[400px] w-full overflow-hidden">
       <img
         ref={imgRef}
-        src="/images/about-banner.jpg" /* your banner image */
+        src="/s1.jpeg" /* your banner image */
         alt="About Sanera Minds"
         className="w-full h-full object-cover will-change-transform"
       />

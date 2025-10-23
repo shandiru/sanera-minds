@@ -81,7 +81,7 @@ export default function Header() {
               href="/about"
               className="px-3 py-2 rounded-md uppercase tracking-[0.18em] text-[14px] text-[#062016] hover:bg-[#11604b] hover:text-white transition"
             >
-              About me
+              About us
             </a>
           </nav>
 
@@ -163,7 +163,7 @@ export default function Header() {
             href="/about"
             className="px-6 py-3 uppercase tracking-[0.18em] text-[13px] text-[#062016]"
           >
-            About me
+            About us
           </a>
           <a
             href="/contact"

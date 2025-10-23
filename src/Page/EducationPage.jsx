@@ -55,7 +55,7 @@ function EducationBanner() {
     <div ref={wrapRef} className="relative h-[300px] md:h-[400px] w-full overflow-hidden">
       <img
         ref={imgRef}
-        src="/images/education-banner.jpg"
+        src="/s1.jpeg"
         alt="Education at Sanera Minds"
         className="w-full h-full object-cover will-change-transform"
       />

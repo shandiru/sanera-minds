@@ -2,24 +2,25 @@
 
 export default function ServicesSection() {
   const services = [
-    { title: "Organisations", href: "/services/organisation", img: "/images/organisations.jpg" },
-    { title: "Education", href: "/services/education", img: "/images/education.jpg" },
-    { title: "Workshops", href: "/services/workshops", img: "/images/workshops.jpg" },
-    { title: "Resources", href: "/services/resources", img: "/images/resources.jpg" },
-    { title: "Contact Us", href: "/contact", img: "/images/contact.jpg" },
+    { title: "Organisations", href: "/services/organisation", img: "/s.jpeg" },
+    { title: "Education", href: "/services/education", img: "/s1.jpeg" },
+    { title: "Workshops", href: "/services/workshops", img: "/s2.jpeg" },
+    { title: "Resources", href: "/services/resources", img: "/s3.jpeg" },
+    { title: "Contact Us", href: "/contact", img: "/s4.jpeg" },
   ]
 
   return (
-    <section className="bg-[#eff0ea] text-[#062016] font-body">
+    <section className="bg-[#eff0ea] text-[#062016] font-[Inter]">
       {/* Top Banner */}
       <div className="relative h-[300px] md:h-[400px] w-full overflow-hidden">
         <img
-          src="/images/banner.jpg"
+          src="/s1.jpeg"
           alt="Our Services"
-          className="object-cover w-full h-full brightness-[0.6]"
+          className="object-cover w-full h-full"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#062016]/80 via-[#11604b]/80 to-[#0e3f30]/80 flex items-center justify-center">
-          <h2 className="text-white text-4xl md:text-5xl font-display font-semibold uppercase tracking-[0.08em] drop-shadow-lg">
+        {/* ✅ Neutral gradient overlay (no green tint) */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/40 flex items-center justify-center">
+          <h2 className="text-white text-4xl md:text-5xl font-[Playfair_Display] font-semibold uppercase tracking-[0.08em] drop-shadow-lg">
             Services
           </h2>
         </div>
@@ -28,8 +29,12 @@ export default function ServicesSection() {
       {/* Intro Text */}
       <div className="max-w-3xl mx-auto text-center px-6 py-14">
         <p className="text-lg md:text-xl text-[#062016]/85 leading-relaxed font-light">
-          Explore our range of <span className="font-medium text-[#11604b]">therapist-led programs</span> designed to
-          enhance mental wellbeing — from workplaces to classrooms, and beyond.
+          Explore our range of{" "}
+          <span className="font-medium text-[#11604b]">
+            therapist-led programs
+          </span>{" "}
+          designed to enhance mental wellbeing — from workplaces to classrooms,
+          and beyond.
         </p>
       </div>
 
@@ -48,15 +53,19 @@ export default function ServicesSection() {
                 alt={service.title}
                 className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700 ease-out"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#062016]/80 via-[#062016]/30 to-transparent opacity-70 group-hover:opacity-90 transition duration-500"></div>
-              <h3 className="absolute bottom-5 left-1/2 -translate-x-1/2 text-white text-2xl font-semibold tracking-wide text-center drop-shadow-lg font-display">
+
+              {/* Dark overlay that fades out on hover */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/25 to-transparent opacity-70 group-hover:opacity-0 transition duration-700 ease-out"></div>
+
+              {/* Title */}
+              <h3 className="absolute bottom-5 left-1/2 -translate-x-1/2 text-white text-2xl font-semibold tracking-wide text-center drop-shadow-lg font-[Playfair_Display]">
                 {service.title}
               </h3>
             </div>
 
-            {/* Overlay Text on Hover */}
-            <div className="absolute inset-0 bg-[#11604b]/95 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500">
-              <span className="text-white text-lg font-body tracking-[0.05em] px-6 text-center">
+            {/* Hover Text */}
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+              <span className="text-white text-lg font-[Inter] tracking-[0.05em] px-6 text-center drop-shadow-lg">
                 Learn more about our {service.title.toLowerCase()} programs →
               </span>
             </div>

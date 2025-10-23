@@ -52,7 +52,7 @@ function OrgBanner() {
     <div ref={wrapRef} className="relative h-[300px] md:h-[400px] w-full overflow-hidden">
       <img
         ref={imgRef}
-        src="/images/organisation-banner.jpg"
+        src="/s1.jpeg"
         alt="Organisation Workshops"
         className="w-full h-full object-cover will-change-transform"
       />

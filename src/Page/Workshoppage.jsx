@@ -55,7 +55,7 @@ function WorkshopBanner() {
     <div ref={bannerRef} className="relative h-[280px] md:h-[380px] w-full overflow-hidden">
       <img
         ref={imgRef}
-        src="/images/workshops-banner.jpg"
+        src="/s1.jpeg"
         alt="Workshops"
         className="w-full h-full object-cover will-change-transform"
       />
