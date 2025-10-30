@@ -18,7 +18,6 @@ export default function ServicesSection() {
           alt="Our Services"
           className="object-cover w-full h-full"
         />
-        {/* ✅ Neutral gradient overlay (no green tint) */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/40 flex items-center justify-center">
           <h2 className="text-white text-4xl md:text-5xl font-[Playfair_Display] font-semibold uppercase tracking-[0.08em] drop-shadow-lg">
             Services
@@ -47,27 +46,27 @@ export default function ServicesSection() {
             className="relative group rounded-2xl overflow-hidden bg-white border border-[#e0e3df] shadow-[0_6px_20px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_30px_rgba(0,0,0,0.12)] transition-all duration-500 hover:-translate-y-2"
           >
             {/* Image */}
-            <div className="relative h-[240px] md:h-[260px] overflow-hidden">
+            <div className="relative h-[240px] md:h-[260px] overflow-hidden flex items-center justify-center">
               <img
                 src={service.img}
                 alt={service.title}
                 className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700 ease-out"
               />
 
-              {/* Dark overlay that fades out on hover */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/25 to-transparent opacity-70 group-hover:opacity-0 transition duration-700 ease-out"></div>
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/25 to-transparent opacity-70 transition duration-700 ease-out group-hover:opacity-0"></div>
 
-              {/* Title */}
-              <h3 className="absolute bottom-5 left-1/2 -translate-x-1/2 text-white text-2xl font-semibold tracking-wide text-center drop-shadow-lg font-[Playfair_Display]">
+              {/* ✅ Center Title (fades out on hover) */}
+              <h3 className="absolute text-center text-white text-2xl font-semibold tracking-wide drop-shadow-lg font-[Playfair_Display] transition-opacity duration-500 group-hover:opacity-0">
                 {service.title}
               </h3>
-            </div>
 
-            {/* Hover Text */}
-            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-              <span className="text-white text-lg font-[Inter] tracking-[0.05em] px-6 text-center drop-shadow-lg">
-                Learn more about our {service.title.toLowerCase()} programs →
-              </span>
+              {/* ✅ Hover Text (fades in smoothly) */}
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-700 group-hover:opacity-100">
+                <span className="text-white text-lg font-[Inter] tracking-[0.05em] px-6 text-center drop-shadow-lg">
+                  Learn more about our {service.title.toLowerCase()} programs →
+                </span>
+              </div>
             </div>
           </a>
         ))}
