@@ -18,18 +18,15 @@ function AboutBanner() {
     const ctx = gsap.context(() => {
       if (reduce) return
 
-      // Title in
       gsap.from(titleRef.current, {
         y: 28, opacity: 0, duration: 0.9, ease: 'power3.out', delay: 0.15,
       })
 
-      // Parallax drift
       gsap.to(imgRef.current, {
         yPercent: 10, ease: 'none',
         scrollTrigger: { trigger: wrapRef.current, start: 'top top', end: 'bottom top', scrub: 0.5 }
       })
 
-      // Overlay slight deepen
       gsap.to(overlayRef.current, {
         opacity: 0.9, ease: 'none',
         scrollTrigger: { trigger: wrapRef.current, start: 'top top', end: 'bottom top', scrub: 0.5 }
@@ -42,7 +39,7 @@ function AboutBanner() {
     <div ref={wrapRef} className="relative h-[300px] md:h-[400px] w-full overflow-hidden">
       <img
         ref={imgRef}
-        src="/s1.jpeg" /* your banner image */
+        src="/s1.jpeg"
         alt="About Sanera Minds"
         className="w-full h-full object-cover will-change-transform"
       />
@@ -133,7 +130,7 @@ function AboutContent() {
 }
 
 /* ===================================
-   3b) Optional: Content with Image (wipe)
+   3b) Optional: Content + Image
    =================================== */
 function AboutContentWithImage() {
   const rootRef = useRef(null)
@@ -143,19 +140,12 @@ function AboutContentWithImage() {
     if (reduce) return
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: rootRef.current,
-          start: 'top 78%',
-          toggleActions: 'play reverse play reverse',
-        }
+        scrollTrigger: { trigger: rootRef.current, start: 'top 78%' }
       })
       tl.from('.aci-text', { x: -28, opacity: 0, duration: 0.75, ease: 'power3.out' })
         .from(imgRef.current, {
           clipPath: 'inset(12% 12% 12% 12%)',
-          scale: 1.06,
-          opacity: 0,
-          duration: 0.95,
-          ease: 'power2.out'
+          scale: 1.06, opacity: 0, duration: 0.95, ease: 'power2.out'
         }, '-=0.45')
     }, rootRef)
     return () => ctx.revert()
@@ -169,18 +159,14 @@ function AboutContentWithImage() {
             Sanera Minds was born from the belief that mental health learning should be practical, engaging,
             and deeply human — never a tick-box exercise.
           </p>
-          <p className="font-body text-[#062016]/90 text-[17px] md:text-lg leading-relaxed">
-            We blend CBT with interactive workshops so every session is useful, memorable, and meaningful.
-          </p>
         </div>
         <div className="relative rounded-2xl overflow-hidden shadow-lg">
           <img
             ref={imgRef}
-            src="/images/about-classic.jpg" /* swap to your preferred image */
+            src="/images/about-classic.jpg"
             alt="Sanera Minds Workshop"
-            className="w-full h-[380px] object-cover will-change-transform"
+            className="w-full h-[380px] object-cover"
           />
-          <div className="absolute inset-0 bg-[rgba(6,32,22,0.2)] mix-blend-multiply pointer-events-none" />
         </div>
       </div>
     </section>
@@ -188,35 +174,40 @@ function AboutContentWithImage() {
 }
 
 /* =========================
-   4) We work with (stagger)
+   4) We work with (UPDATED HERE)
    ========================= */
 function AboutWorkWith() {
   const rootRef = useRef(null)
+
   useEffect(() => {
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     if (reduce) return
+
     const ctx = gsap.context(() => {
       const items = gsap.utils.toArray('.aww-item')
       gsap.from(items, {
-        scrollTrigger: {
-          trigger: rootRef.current,
-          start: 'top 80%',
-          toggleActions: 'play reverse play reverse',
-        },
+        scrollTrigger: { trigger: rootRef.current, start: 'top 80%' },
         y: 18, opacity: 0, duration: 0.55, ease: 'power2.out', stagger: 0.1,
       })
     }, rootRef)
+
     return () => ctx.revert()
   }, [])
+
   return (
     <section ref={rootRef} className="bg-[#eff0ea] py-16 px-6">
       <div className="max-w-4xl mx-auto">
         <h2 className="font-display text-2xl md:text-3xl text-[#11604b] mb-6">We work with:</h2>
+
         <ul className="font-body copy list-disc list-inside space-y-3 text-[#062016]/90 text-[17px] md:text-lg">
-          <li className="aww-item">Businesses and organisations looking to train and support their teams</li>
-          <li className="aww-item">Schools and universities embedding emotional resilience and self-awareness</li>
-          <li className="aww-item">Small businesses for team-building and wellbeing</li>
-          <li className="aww-item">Hens & friendship groups wanting a fun yet meaningful way to connect and learn</li>
+
+          <li className="aww-item">Nurseries fostering early emotional development</li>
+          <li className="aww-item">Schools supporting student wellbeing and resilience</li>
+          <li className="aww-item">Universities enhancing mental health understanding in young adults</li>
+
+          <li className="aww-item">Businesses and organisations supporting their teams</li>
+          <li className="aww-item">Small businesses seeking wellbeing and team-building support</li>
+          <li className="aww-item">Hens & friendship groups wanting a fun, meaningful way to connect</li>
         </ul>
       </div>
     </section>
@@ -224,7 +215,7 @@ function AboutWorkWith() {
 }
 
 /* =========================
-   5) Closing (lift + CTA)
+   5) Closing (CTA)
    ========================= */
 function AboutClosing() {
   const rootRef = useRef(null)
@@ -232,23 +223,23 @@ function AboutClosing() {
 
   useEffect(() => {
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
     const ctx = gsap.context(() => {
       if (reduce) return
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: rootRef.current,
-          start: 'top 85%',
-          toggleActions: 'play reverse play reverse',
-        }
-      })
-      tl.from('.about-close-copy', { y: 20, opacity: 0, duration: 0.7, ease: 'power2.out' })
-        .from('.about-close-cta', { y: 14, opacity: 0, duration: 0.5, ease: 'power2.out' }, '-=0.3')
 
-      // CTA hover micro-interaction
+      const tl = gsap.timeline({
+        scrollTrigger: { trigger: rootRef.current, start: 'top 85%' }
+      })
+
+      tl.from('.about-close-copy', { y: 20, opacity: 0, duration: 0.7 })
+        .from('.about-close-cta', { y: 14, opacity: 0, duration: 0.5 }, '-=0.3')
+
+      // CTA subtle hover animation
       if (ctaRef.current) {
         const btn = ctaRef.current
         const enter = () => gsap.to(btn, { y: -2, boxShadow: '0 10px 24px rgba(17,96,75,0.25)', duration: 0.25 })
         const leave = () => gsap.to(btn, { y: 0, boxShadow: '0 0 0 rgba(0,0,0,0)', duration: 0.25 })
+
         btn.addEventListener('mouseenter', enter)
         btn.addEventListener('mouseleave', leave)
         return () => {
@@ -257,6 +248,7 @@ function AboutClosing() {
         }
       }
     }, rootRef)
+
     return () => ctx.revert()
   }, [])
 
@@ -264,8 +256,9 @@ function AboutClosing() {
     <section ref={rootRef} className="bg-white py-20 px-6 text-center">
       <p className="about-close-copy font-body copy max-w-3xl mx-auto text-[#062016]/90 text-lg md:text-xl mb-6">
         Whether it’s online, in-person, or hybrid, our sessions are interactive, practical, and —
-        let’s be honest — <span className="italic text-[#11604b] font-medium">always</span> fun.
+        <span className="italic text-[#11604b] font-medium"> always</span> fun.
       </p>
+
       <h3 className="font-display text-2xl md:text-3xl text-[#062016]">
         It’s time for a new era. <span className="italic text-[#11604b]">Welcome to Sanera Minds.</span>
       </h3>
@@ -273,7 +266,7 @@ function AboutClosing() {
       <a
         ref={ctaRef}
         href="/contact"
-        className="about-close-cta inline-block mt-8 px-6 py-3 rounded-lg bg-[#11604b] text-white font-body tracking-wide hover:opacity-90 transition will-change-transform"
+        className="about-close-cta inline-block mt-8 px-6 py-3 rounded-lg bg-[#11604b] text-white tracking-wide hover:opacity-90 transition"
       >
         Get in touch
       </a>
@@ -288,7 +281,7 @@ export default function AboutPage() {
       <AboutBanner />
       <AboutIntro />
       <AboutContent />
-      <AboutContentWithImage /> {/* optional; remove if you want text-only */}
+      <AboutContentWithImage />
       <AboutWorkWith />
       <AboutClosing />
     </main>
