@@ -57,13 +57,15 @@ function AboutBanner() {
 }
 
 /* =========================
-   2) Intro (staggered paras)
+   2) Intro (your updated text)
    ========================= */
 function AboutIntro() {
   const rootRef = useRef(null)
+
   useEffect(() => {
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     if (reduce) return
+
     const ctx = gsap.context(() => {
       const els = gsap.utils.toArray('.about-intro-para')
       gsap.from(els, {
@@ -75,26 +77,33 @@ function AboutIntro() {
         y: 18, opacity: 0, duration: 0.65, ease: 'power2.out', stagger: 0.12,
       })
     }, rootRef)
+
     return () => ctx.revert()
   }, [])
+
   return (
     <section ref={rootRef} className="bg-[#eff0ea] py-12 md:py-16 px-6 text-center">
+      
       <p className="about-intro-para font-body copy max-w-3xl mx-auto text-[#062016]/90 text-lg md:text-xl">
-        At Sanera Minds, we believe learning about mental health shouldn’t feel like ticking a box
-        or worse, like reading a textbook with no real-life application.
+        We’re a team of accredited psychotherapists who found ourselves clicking through the same
+        e-learning... and honestly? It felt more like a ‘tick-box’ exercise than something genuinely
+        useful. So we decided to do something about it.
       </p>
+
     </section>
   )
 }
 
 /* =========================
-   3) Content (classic reveal)
+   3) Content (your second section added)
    ========================= */
 function AboutContent() {
   const rootRef = useRef(null)
+
   useEffect(() => {
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     if (reduce) return
+
     const ctx = gsap.context(() => {
       gsap.from('.about-p', {
         scrollTrigger: {
@@ -105,61 +114,64 @@ function AboutContent() {
         y: 22, opacity: 0, duration: 0.6, ease: 'power2.out', stagger: 0.12,
       })
     }, rootRef)
+
     return () => ctx.revert()
   }, [])
+
   return (
     <section ref={rootRef} className="bg-white py-16 px-6">
       <div className="max-w-4xl mx-auto space-y-6 font-body text-[#062016]/90 copy text-[17px] md:text-lg">
+
         <p className="about-p">
-          We’re a team of qualified therapists who found ourselves clicking through the same
-          e-learning... and honestly? It felt more like a ‘tick-box’ exercise than something
-          genuinely useful. So we decided to do something about it.
+          We work with businesses and organisations looking to train and support their teams —
+          nurseries, schools and universities embedding emotional resilience and self-awareness —
+          small businesses seeking wellbeing and team-building — and events wanting thoughtful,
+          wellbeing-focused moments that stand out.
         </p>
-        <p className="about-p">
-          <span className="font-semibold text-[#11604b]">Sanera Minds</span> (which means the new era of mental wellbeing) was born from a simple idea:
-          mental health education should be practical, engaging, and actually helpful — not something you forget five minutes after the webinar ends.
-        </p>
-        <p className="about-p">
-          Our seminars and workshops are grounded in <span className="font-semibold text-[#11604b]">CBT (Cognitive Behavioural Therapy)</span>,
-          one of the most effective, hands-on approaches to improving mental wellbeing. Everything we teach is designed to be put into practice right away —
-          whether you’re navigating stress at work, managing anxiety, or supporting others.
-        </p>
+
       </div>
     </section>
   )
 }
 
 /* ===================================
-   3b) Optional: Content + Image
+   3b) Additional section with image
    =================================== */
 function AboutContentWithImage() {
   const rootRef = useRef(null)
   const imgRef = useRef(null)
+
   useEffect(() => {
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     if (reduce) return
+
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({
         scrollTrigger: { trigger: rootRef.current, start: 'top 78%' }
       })
+
       tl.from('.aci-text', { x: -28, opacity: 0, duration: 0.75, ease: 'power3.out' })
         .from(imgRef.current, {
           clipPath: 'inset(12% 12% 12% 12%)',
           scale: 1.06, opacity: 0, duration: 0.95, ease: 'power2.out'
         }, '-=0.45')
     }, rootRef)
+
     return () => ctx.revert()
   }, [])
+
   return (
     <section ref={rootRef} className="bg-white py-14 md:py-20 px-6">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
         <div className="aci-text space-y-5">
           <h2 className="font-display text-2xl md:text-3xl text-[#11604b]">Our Story</h2>
           <p className="font-body text-[#062016]/90 text-[17px] md:text-lg leading-relaxed">
-            Sanera Minds was born from the belief that mental health learning should be practical, engaging,
-            and deeply human — never a tick-box exercise.
+            We built Sanera Minds to bring learning back to life — human, warm, practical, and
+            genuinely uplifting.
           </p>
         </div>
+
         <div className="relative rounded-2xl overflow-hidden shadow-lg">
           <img
             ref={imgRef}
@@ -168,13 +180,14 @@ function AboutContentWithImage() {
             className="w-full h-[380px] object-cover"
           />
         </div>
+
       </div>
     </section>
   )
 }
 
 /* =========================
-   4) We work with (UPDATED HERE)
+   4) We work with (your text added)
    ========================= */
 function AboutWorkWith() {
   const rootRef = useRef(null)
@@ -201,13 +214,11 @@ function AboutWorkWith() {
 
         <ul className="font-body copy list-disc list-inside space-y-3 text-[#062016]/90 text-[17px] md:text-lg">
 
-          <li className="aww-item">Nurseries fostering early emotional development</li>
-          <li className="aww-item">Schools supporting student wellbeing and resilience</li>
-          <li className="aww-item">Universities enhancing mental health understanding in young adults</li>
+          <li className="aww-item">Businesses & organisations looking to support their teams</li>
+          <li className="aww-item">Nurseries, schools & universities embedding emotional resilience</li>
+          <li className="aww-item">Small businesses seeking wellbeing & team-building</li>
+          <li className="aww-item">Events hiring us to create thoughtful wellbeing-focused moments</li>
 
-          <li className="aww-item">Businesses and organisations supporting their teams</li>
-          <li className="aww-item">Small businesses seeking wellbeing and team-building support</li>
-          <li className="aww-item">Hens & friendship groups wanting a fun, meaningful way to connect</li>
         </ul>
       </div>
     </section>
@@ -234,11 +245,12 @@ function AboutClosing() {
       tl.from('.about-close-copy', { y: 20, opacity: 0, duration: 0.7 })
         .from('.about-close-cta', { y: 14, opacity: 0, duration: 0.5 }, '-=0.3')
 
-      // CTA subtle hover animation
       if (ctaRef.current) {
         const btn = ctaRef.current
-        const enter = () => gsap.to(btn, { y: -2, boxShadow: '0 10px 24px rgba(17,96,75,0.25)', duration: 0.25 })
-        const leave = () => gsap.to(btn, { y: 0, boxShadow: '0 0 0 rgba(0,0,0,0)', duration: 0.25 })
+        const enter = () =>
+          gsap.to(btn, { y: -2, boxShadow: '0 10px 24px rgba(17,96,75,0.25)', duration: 0.25 })
+        const leave = () =>
+          gsap.to(btn, { y: 0, boxShadow: '0 0 0 rgba(0,0,0,0)', duration: 0.25 })
 
         btn.addEventListener('mouseenter', enter)
         btn.addEventListener('mouseleave', leave)
@@ -255,8 +267,7 @@ function AboutClosing() {
   return (
     <section ref={rootRef} className="bg-white py-20 px-6 text-center">
       <p className="about-close-copy font-body copy max-w-3xl mx-auto text-[#062016]/90 text-lg md:text-xl mb-6">
-        Whether it’s online, in-person, or hybrid, our sessions are interactive, practical, and —
-        <span className="italic text-[#11604b] font-medium"> always</span> fun.
+        Whether it’s online, in-person, or hybrid, our sessions are interactive, practical, and always human.
       </p>
 
       <h3 className="font-display text-2xl md:text-3xl text-[#062016]">

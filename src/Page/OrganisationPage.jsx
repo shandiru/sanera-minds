@@ -109,10 +109,8 @@ function OrgIntro() {
           buzzword, it’s part of how you work.
         </p>
         <p className="org-para font-body text-[#062016]/90 text-lg md:text-xl leading-relaxed">
-          We know every workplace is different. That’s why every session is tailored to your people,
-          your challenges, and your goals. Whether you’re training managers to better support their
-          teams or giving staff practical tools to look after their own mental health, we meet you
-          where you are — and build from there.
+          We know every workplace is different. That's why every session is tailored to your people,
+          your challenges, and your goals.
         </p>
       </div>
     </section>
@@ -124,6 +122,7 @@ function OrgIntro() {
    ========================= */
 function OrgExpect() {
   const rootRef = useRef(null)
+
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.from(".org-item", {
@@ -139,6 +138,7 @@ function OrgExpect() {
         stagger: 0.1,
       })
     }, rootRef)
+
     return () => ctx.revert()
   }, [])
 
@@ -148,47 +148,46 @@ function OrgExpect() {
         <h2 className="font-display text-2xl md:text-3xl text-[#11604b] mb-6 text-center">
           What to Expect
         </h2>
+
         <ul className="font-body text-[#062016]/90 text-[17px] md:text-lg space-y-5">
+
           <li className="org-item">
-            <span className="font-semibold text-[#11604b]">
-              Therapist-led sessions that feel real and relevant.{" "}
-            </span>
-            Grounded, practical, and designed to fit naturally into the working day. No awkward
-            roleplay, no corporate clichés — just honest, evidence-based learning that makes a
-            difference.
+            <span className="font-semibold text-[#11604b]">Therapist-led sessions that feel real and relevant.</span>{" "}
+            Grounded, practical, and designed to fit naturally into the working day.
           </li>
+
           <li className="org-item">
-            <span className="font-semibold text-[#11604b]">Tailored wellbeing assessments. </span>
-            We start by understanding your organisation’s specific needs — from workload stress to
-            communication culture — then design workshops that meet those challenges head-on.
+            <span className="font-semibold text-[#11604b]">Tailored wellbeing assessments.</span>{" "}
+            We start by understanding your organisation’s needs, then design workshops that meet them.
           </li>
+
           <li className="org-item">
-            <span className="font-semibold text-[#11604b]">
-              Training for managers and leaders.{" "}
-            </span>
-            Learn how to recognise signs of stress, have supportive conversations, and create
-            psychologically safe spaces where staff feel seen and valued.
+            <span className="font-semibold text-[#11604b]">Training for managers and leaders.</span>{" "}
+            Learn how to recognise signs of stress and create psychologically safe spaces.
           </li>
+
           <li className="org-item">
-            <span className="font-semibold text-[#11604b]">
-              Coping and resilience strategies for staff.{" "}
-            </span>
-            CBT-based techniques, grounding tools, and stress management skills that empower
-            employees to take care of themselves and each other.
+            <span className="font-semibold text-[#11604b]">Coping and resilience strategies for staff.</span>{" "}
+            CBT techniques and stress management tools that people can apply instantly.
           </li>
+
+          {/* ⭐ ADDED CONTENT: Flexible Formats */}
           <li className="org-item">
             <span className="font-semibold text-[#11604b]">Flexible formats. </span>
-            From 60-minute virtual sessions to in-person team days or leadership training — we’ll
-            adapt to your space, your schedule, and your priorities.
+            From 60–90 minute virtual sessions to in-person team half/full days or leadership training — 
+            we’ll adapt to your space, your schedule, and your priorities.
           </li>
+
+          {/* ⭐ ADDED CONTENT: E-learning */}
           <li className="org-item">
             <span className="font-semibold text-[#11604b]">
               E-learning: addressing life’s hardest moments.{" "}
             </span>
             On-demand, therapist-designed modules for employees navigating grief, loss,
-            miscarriage, pet loss, illness, IVF, or infertility. Compassionate, quiet support that
-            helps them manage both wellbeing and workload without judgement or pressure.
+            miscarriage, pet loss, illness, IVF, infertility, and more — quiet, compassionate support
+            that helps them manage wellbeing and workload without judgement or pressure.
           </li>
+
         </ul>
       </div>
     </section>
@@ -200,6 +199,7 @@ function OrgExpect() {
    ========================= */
 function OrgWhyItMatters() {
   const rootRef = useRef(null)
+
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.from(".org-why", {
@@ -218,16 +218,19 @@ function OrgWhyItMatters() {
     <section ref={rootRef} className="bg-[#eff0ea] py-16 px-6 text-center">
       <div className="max-w-3xl mx-auto space-y-5">
         <h2 className="font-display text-2xl md:text-3xl text-[#11604b]">Why It Matters</h2>
+
         <p className="org-why font-body text-[#062016]/90 text-lg md:text-xl leading-relaxed">
           Mental health isn’t separate from performance — it drives it.
         </p>
-        <ul className="org-why font-body text-[#062016]/90 text-lg md:text-xl leading-relaxed text-left list-disc list-inside space-y-2">
-          <li>Over 70 million workdays lost yearly in the UK due to stress, depression, and anxiety (HSE, 2023).</li>
-          <li>Cost to employers estimated at £56 billion annually (Deloitte, 2022).</li>
-          <li>Organisations investing in wellbeing see a 5:1 return through productivity and retention.</li>
+
+        <ul className="org-why font-body text-[#062016]/90 text-lg md:text-xl text-left list-disc list-inside space-y-2">
+          <li>Over 70 million workdays lost yearly due to stress, depression, and anxiety.</li>
+          <li>Financial cost to employers estimated at £56 billion annually.</li>
+          <li>Companies investing in wellbeing see a 5:1 return in productivity & retention.</li>
         </ul>
-        <p className="org-why font-body text-[#062016]/90 text-lg md:text-xl leading-relaxed">
-          Supporting mental health at work isn’t just the right thing to do — it’s smart business.
+
+        <p className="org-why font-body text-[#062016]/90 text-lg md:text-xl">
+          Supporting mental health isn’t just kindness — it’s smart business.
         </p>
       </div>
     </section>
@@ -264,13 +267,16 @@ function OrgClosing() {
         gsap.to(btn, { y: -2, boxShadow: "0 10px 24px rgba(17,96,75,0.25)", duration: 0.25 })
       const leave = () =>
         gsap.to(btn, { y: 0, boxShadow: "0 0 0 rgba(0,0,0,0)", duration: 0.25 })
+
       btn.addEventListener("mouseenter", enter)
       btn.addEventListener("mouseleave", leave)
+
       return () => {
         btn.removeEventListener("mouseenter", enter)
         btn.removeEventListener("mouseleave", leave)
       }
     }, rootRef)
+
     return () => ctx.revert()
   }, [])
 
@@ -278,17 +284,18 @@ function OrgClosing() {
     <section ref={rootRef} className="bg-white py-20 px-6 text-center">
       <p className="org-close-copy font-body max-w-3xl mx-auto text-[#062016]/90 text-lg md:text-xl mb-6">
         Whether you’re a small business or a large organisation, our goal is to help you build a
-        workplace where people feel supported, capable, and calm — even when things get busy.
+        workplace where people feel supported, capable, and calm — even during the busiest times.
       </p>
+
       <h3 className="font-display text-2xl md:text-3xl text-[#062016]">
         Because healthy teams do better work.{" "}
-        <span className="italic text-[#11604b]">Let’s build yours.</span>
+        <span className="italic text-[#11604b]">Let's build yours.</span>
       </h3>
 
       <a
         ref={ctaRef}
         href="/contact"
-        className="org-close-cta inline-block mt-8 px-6 py-3 rounded-lg bg-[#11604b] text-white font-body tracking-wide hover:opacity-90 transition will-change-transform"
+        className="org-close-cta inline-block mt-8 px-6 py-3 rounded-lg bg-[#11604b] text-white font-body tracking-wide hover:opacity-90 transition"
       >
         Get in touch
       </a>
