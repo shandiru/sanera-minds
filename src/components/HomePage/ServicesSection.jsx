@@ -4,7 +4,7 @@ export default function ServicesSection() {
   const services = [
     { title: "Organisations", href: "/services/organisation", img: "/s.jpeg" },
     { title: "Education", href: "/services/education", img: "/s1.jpeg" },
-    { title: "Workshops", href: "/services/workshops", img: "/s2.jpeg" },
+    { title: "Events", href: "/services/events", img: "/s2.jpeg" },
     { title: "Resources", href: "/services/resources", img: "/s3.jpeg" },
     { title: "Contact Us", href: "/contact", img: "/s4.jpeg" },
   ]
