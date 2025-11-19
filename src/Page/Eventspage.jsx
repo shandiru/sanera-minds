@@ -35,12 +35,12 @@ function WorkshopBanner() {
 
       <div className="absolute inset-0 bg-gradient-to-r from-[rgba(6,32,22,0.82)] via-[rgba(6,32,22,0.78)] to-[rgba(17,96,75,0.72)]" />
 
-      <div className="absolute inset-0 flex items-center justify-center text-center px-6">
+     <div className="absolute inset-0 flex items-center justify-center text-center px-6">
         <h1
-          className="font-display text-white text-4xl md:text-5xl lg:text-6xl tracking-wide"
+          className="font-display text-white text-4xl md:text-5xl font-bold uppercase tracking-wide"
           data-aos="fade-up"
         >
-          Events
+          <span className="small-caps">Events</span>
         </h1>
       </div>
     </div>
@@ -95,16 +95,19 @@ function WorkshopImageBlock() {
             Therapist-led, human-first
           </h2>
 
-          <p className="font-body text-[#062016]/90 text-[17px] md:text-lg leading-relaxed">
-            Every session is guided by accredited psychotherapists and crafted to feel warm,
-            welcoming, and genuinely meaningful — never awkward or clinical.
+         <p className="font-body text-[#062016]/90 text-[17px] md:text-lg leading-relaxed">
+            All sessions are guided by accredited psychotherapists and thoughtfully
+            designed to provide a warm, welcoming, and meaningful experience. They
+            foster authentic conversation, practical insights, and space for reflection
+            and personal growth.
           </p>
 
           <p className="font-body text-[#062016]/90 text-[17px] md:text-lg leading-relaxed">
-            No forced icebreakers or surface-level chatter — just real conversation, practical tools,
-            and space to connect, reflect, and breathe. Perfect for events, gatherings, and parties
-            that value depth as much as fun.
+            These experiences are well-suited for a wide range of events, including
+            corporate gatherings, team-building initiatives, and special occasions where
+            thoughtful engagement and wellbeing are valued alongside enjoyment.
           </p>
+
         </div>
 
         <div
@@ -141,12 +144,25 @@ function WorkshopFormats() {
           Flexible Formats
         </h2>
 
-        <p
-          className="font-body text-[#062016]/90 text-lg md:text-xl leading-relaxed"
-          data-aos="fade-up"
-        >
-          Flexible formats from online workshops to in-person sessions — in your space or ours.
-        </p>
+       <p
+  className="font-body text-[#062016]/90 text-lg md:text-xl leading-relaxed"
+  data-aos="fade-up"
+>
+  We offer flexible formats, from online workshops to in-person sessions,
+  delivered either in your space or ours. Each experience is shaped with care to
+  meet your group where they are.
+</p>
+
+<p
+  className="font-body text-[#062016]/90 text-lg md:text-xl leading-relaxed"
+  data-aos="fade-up"
+  data-aos-delay="200"
+>
+  Whether it’s a team offsite, a wellness event, or an intimate gathering, our
+  sessions create space to pause, connect, and recharge. Wellbeing is not
+  one-size-fits-all — and neither are we.
+</p>
+
 
       </div>
     </section>

@@ -77,7 +77,7 @@ export default function Footer() {
                 href="mailto:saneraminds@gmail.com"
                 className="hover:text-[#11604b] transition"
               >
-                saneraminds@gmail.com
+                E-mail
               </a>
             </li>
 
@@ -88,7 +88,7 @@ export default function Footer() {
                 target="_blank"
                 className="hover:text-[#11604b] transition"
               >
-                WhatsApp: 447414786958
+                WhatsApp
               </a>
             </li>
 
