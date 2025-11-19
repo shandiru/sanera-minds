@@ -13,11 +13,11 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Homepage />} />
-         <Route path="/about" element={<Aboutpage />} />
-          <Route path="/services/events" element={<Eventspage />} />
-          <Route path="/services/education" element={<EducationPage />} />
-           <Route path="/services/organisation" element={<OrganisationPage />} />
-             <Route path="/contact" element={<BookNowPage />} />
+        <Route path="/about" element={<Aboutpage />} />
+        <Route path="/services/events" element={<Eventspage />} />
+        <Route path="/services/education" element={<EducationPage />} />
+        <Route path="/services/organisation" element={<OrganisationPage />} />
+        <Route path="/contact" element={<BookNowPage />} />
       </Routes>
     </Router>
   );
