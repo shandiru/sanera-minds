@@ -165,7 +165,7 @@ export default function Header() {
           </a>
 
           <a
-            href="/appointments"
+            href="/contact"
             className="mx-6 my-3 text-center px-4 py-3 rounded-lg uppercase tracking-[0.15em] text-[15px] font-bold bg-[#0a3d2f] text-white hover:opacity-90 transition"
           >
             Book Now
