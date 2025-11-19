@@ -61,7 +61,7 @@ export default function Header() {
                     { label: 'Organisations', href: '/services/organisation' },
                     { label: 'Education', href: '/services/education' },
                     { label: 'Events', href: '/services/events' },
-                    { label: 'Resources', href: '/services/resources' },
+                    // { label: 'Resources', href: '/services/resources' },
                     { label: 'Contact us', href: '/contact' },
                   ].map((item) => (
                     <li key={item.label}>
@@ -143,7 +143,7 @@ export default function Header() {
               { label: 'Organisations', href: '/services/organisation' },
               { label: 'Education', href: '/services/education' },
               { label: 'Events', href: '/services/events' },
-              { label: 'Resources', href: '/services/resources' },
+              // { label: 'Resources', href: '/services/resources' },
               { label: 'Contact us', href: '/contact' },
             ].map((item) => (
               <a
