@@ -270,7 +270,7 @@ function EducationEarlyYears() {
         <div className="relative rounded-2xl overflow-hidden shadow-lg">
           <img
             ref={imgRef}
-            src="/images/early-years.jpg"
+            src="/edu.jpeg"
             alt="Early Years Workshop"
             className="w-full h-[380px] object-cover"
           />

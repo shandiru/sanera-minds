@@ -71,7 +71,7 @@ function WorkshopBanner() {
           ref={titleRef}
           className="font-display text-white text-4xl md:text-5xl lg:text-6xl tracking-wide"
         >
-          Workshops
+          Events
         </h1>
       </div>
     </div>
@@ -190,7 +190,7 @@ function WorkshopImageBlock() {
         <div className="relative rounded-2xl overflow-hidden shadow-lg">
           <img
             ref={imgInnerRef}
-            src="/images/workshops-classic.jpg"
+            src="/event.jpeg"
             alt="Sanera Minds Workshops"
             className="w-full h-[380px] object-cover will-change-transform"
           />
@@ -383,13 +383,7 @@ function WorkshopClosing() {
           one-size-fits-all, and neither are we.
         </p>
 
-        <a
-          ref={ctaRef}
-          href="/contact"
-          className="closing-cta inline-block mt-4 px-6 py-3 rounded-lg bg-[#11604b] text-white font-body tracking-wide hover:opacity-90 transition will-change-transform"
-        >
-          Enquire about a workshop
-        </a>
+       
 
       </div>
     </section>

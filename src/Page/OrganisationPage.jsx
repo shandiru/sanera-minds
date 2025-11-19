@@ -62,7 +62,7 @@ function OrgBanner() {
           ref={titleRef}
           className="font-display text-white text-4xl md:text-5xl font-bold uppercase tracking-wide"
         >
-          <span className="small-caps">Organisation</span>
+          <span className="small-caps">Organisations</span>
         </h1>
       </div>
     </div>

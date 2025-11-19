@@ -19,7 +19,7 @@ export default function Header() {
           </span>
         </a>
 
-        {/* Burger Spacing */}
+        {/* Burger */}
         <button
           onClick={() => setOpenMobile(!openMobile)}
           className="justify-self-end inline-flex flex-col items-center justify-center w-11 h-11 gap-1.5 ml-4"
@@ -37,7 +37,6 @@ export default function Header() {
           {/* LEFT NAV */}
           <nav className="hidden lg:flex items-center gap-9">
 
-            {/* Home */}
             <a
               href="/"
               className="px-3 py-2 rounded-md uppercase tracking-[0.18em] text-[15px] font-bold text-[#0a3d2f] hover:bg-[#0a3d2f] hover:text-white transition"
@@ -61,7 +60,7 @@ export default function Header() {
                   {[
                     { label: 'Organisations', href: '/services/organisation' },
                     { label: 'Education', href: '/services/education' },
-                    { label: 'Workshops', href: '/services/workshops' },
+                    { label: 'Events', href: '/services/events' },
                     { label: 'Resources', href: '/services/resources' },
                     { label: 'Contact us', href: '/contact' },
                   ].map((item) => (
@@ -78,7 +77,6 @@ export default function Header() {
               )}
             </div>
 
-            {/* About */}
             <a
               href="/about"
               className="px-3 py-2 rounded-md uppercase tracking-[0.18em] text-[15px] font-bold text-[#0a3d2f] hover:bg-[#0a3d2f] hover:text-white transition"
@@ -92,20 +90,16 @@ export default function Header() {
             <img src="/logo png.png" alt="Sanera Minds" className="h-10 lg:h-8 xl:h-10 w-auto" />
           </a>
 
-          {/* RIGHT NAV */}
+          {/* RIGHT NAV (BALANCED AFTER REMOVING FAQ) */}
           <nav className="hidden lg:flex items-center gap-9 justify-end">
+
             <a
               href="/contact"
               className="px-3 py-2 rounded-md uppercase tracking-[0.18em] text-[15px] font-bold text-[#0a3d2f] hover:bg-[#0a3d2f] hover:text-white transition"
             >
               Contact us
             </a>
-            <a
-              href="/faqs"
-              className="px-3 py-2 rounded-md uppercase tracking-[0.18em] text-[15px] font-bold text-[#0a3d2f] hover:bg-[#0a3d2f] hover:text-white transition"
-            >
-              FAQs
-            </a>
+
             <a
               href="/contact"
               className="px-5 py-3 rounded-lg uppercase tracking-[0.15em] text-[15px] font-bold bg-[#0a3d2f] text-white hover:opacity-90 transition"
@@ -148,7 +142,7 @@ export default function Header() {
             {[
               { label: 'Organisations', href: '/services/organisation' },
               { label: 'Education', href: '/services/education' },
-              { label: 'Workshops', href: '/services/workshops' },
+              { label: 'Events', href: '/services/events' },
               { label: 'Resources', href: '/services/resources' },
               { label: 'Contact us', href: '/contact' },
             ].map((item) => (
@@ -165,11 +159,9 @@ export default function Header() {
           <a href="/about" className="px-6 py-3 uppercase tracking-[0.18em] text-[14px] font-bold text-[#0a3d2f]">
             About us
           </a>
+
           <a href="/contact" className="px-6 py-3 uppercase tracking-[0.18em] text-[14px] font-bold text-[#0a3d2f]">
             Contact us
-          </a>
-          <a href="/faqs" className="px-6 py-3 uppercase tracking-[0.18em] text-[14px] font-bold text-[#0a3d2f]">
-            FAQs
           </a>
 
           <a
