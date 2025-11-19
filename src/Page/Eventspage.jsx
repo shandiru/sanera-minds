@@ -112,7 +112,7 @@ function WorkshopImageBlock() {
           data-aos="fade-left"
         >
           <img
-            src="/event.jpeg"
+            src="/event.png"
             alt="Sanera Minds Workshops"
             className="w-full h-[380px] object-cover"
           />

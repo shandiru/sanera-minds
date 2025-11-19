@@ -75,7 +75,7 @@ export default function BookNowPage() {
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
               <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/>
             </svg>
-            <span className="font-medium">saneraminds@gmail.com</span>
+            <span className="font-medium">E-mail</span>
           </a>
 
           <a
@@ -86,7 +86,7 @@ export default function BookNowPage() {
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" fill="#25D366">
               <path d="M16 .5C7.6.5.5 7.6.5 16c0 2.7.7 5.4 2 7.7L.5 31.5l8.1-2c2.2 1.2 4.8 1.8 7.4 1.8 8.4 0 15.5-7.1 15.5-15.5S24.4.5 16 .5zm0 28c-2.4 0-4.8-.6-6.9-1.8l-.5-.3-4.8 1.2 1.2-4.7-.3-.5c-1.2-2.1-1.8-4.5-1.8-6.9 0-7 5.8-12.8 12.8-12.8S28.8 9 28.8 16 23 28.5 16 28.5zm7-8.6c-.4-.2-2.3-1.1-2.7-1.2-.4-.2-.7-.2-1 .2-.3.4-1.2 1.2-1.4 1.4-.2.2-.5.3-1 .1-.5-.2-2-.7-3.8-2.2-1.4-1.2-2.3-2.7-2.6-3.2-.3-.5 0-.8.2-1 .2-.2.4-.5.6-.8.2-.3.3-.5.4-.8.1-.3 0-.5 0-.7 0-.2-.9-2.2-1.3-3-.3-.7-.7-.6-1-.6h-.9c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.2 0 1.9 1.4 3.7 1.6 4 .2.3 2.8 4.3 6.8 6 4 .2 4 .2 4.7.2 1.8 0 2.9-1.3 3.3-2 .4-.7.4-1.2.4-1.4s-.3-.4-.7-.6z"/>
             </svg>
-            <span className="font-medium">WhatsApp: +44 7414 786958</span>
+            <span className="font-medium">WhatsApp</span>
           </a>
         </div>
 

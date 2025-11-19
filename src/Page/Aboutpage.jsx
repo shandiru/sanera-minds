@@ -111,7 +111,7 @@ function AboutContentWithImage() {
           data-aos="fade-left"
         >
           <img
-            src="/images/about-classic.jpg"
+            src="/about1.png"
             alt="Sanera Minds Workshop"
             className="w-full h-[380px] object-cover"
           />
