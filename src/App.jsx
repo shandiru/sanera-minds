@@ -7,6 +7,7 @@ import Eventspage from './Page/Eventspage';
 import EducationPage from "./Page/EducationPage"
 import OrganisationPage from "./Page/OrganisationPage"
 import BookNowPage from "./Page/BookNowPage"
+import Footer from "./Page/Footer"
 function App() {
   return (
     <Router>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/services/organisation" element={<OrganisationPage />} />
         <Route path="/contact" element={<BookNowPage />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
