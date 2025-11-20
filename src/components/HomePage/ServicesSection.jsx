@@ -32,7 +32,7 @@ export default function ServicesSection() {
           <span className="font-medium text-[#11604b]">
             therapist-led programs
           </span>{" "}
-          designed to enhance mental wellbeing — from workplaces to classrooms,
+          designed to enhance mental wellbeing  from workplaces to classrooms,
           and beyond.
         </p>
       </div>

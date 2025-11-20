@@ -59,12 +59,12 @@ function EducationIntro() {
           Mental Wellbeing Workshops for Nurseries, Schools & Universities
         </h2>
 
-        <p
+        {/* <p
           className="font-body text-[#062016]/90 text-lg md:text-xl leading-relaxed"
           data-aos="fade-up"
         >
           Because learning starts with feeling safe, supported, and seen.
-        </p>
+        </p> */}
 
         <p
           className="font-body text-[#062016]/90 text-lg md:text-xl leading-relaxed"
@@ -72,7 +72,7 @@ function EducationIntro() {
         >
           We create thoughtful, down-to-earth workshops designed specifically for nurseries,
           schools, colleges, and universities. Whether you’re supporting your staff, students,
-          or both — our sessions give people the tools and confidence to approach mental health
+          or both  our sessions give people the tools and confidence to approach mental health
           with awareness, empathy, and practical skills they can use every day.
         </p>
 
@@ -88,7 +88,7 @@ function EducationIntro() {
           className="font-body text-[#062016]/90 text-lg md:text-xl leading-relaxed"
           data-aos="fade-up"
         >
-          Flexible, assessment-based approach. We tailor every session to your specific needs —
+          Flexible, assessment-based approach. We tailor every session to your specific needs 
           from staff wellbeing training, neurodiversity workshops, and student mental health days
           to curriculum-linked workshops.
         </p>
@@ -121,7 +121,7 @@ function EducationExpect() {
             <span className="font-semibold text-[#11604b]">
               Thoughtful, down-to-earth workshops.
             </span>{" "}
-            Designed for nurseries, schools, colleges, and universities — grounded, warm, and tailored
+            Designed for nurseries, schools, colleges, and universities  grounded, warm, and tailored
             to real needs.
           </li>
 
@@ -137,7 +137,7 @@ function EducationExpect() {
             <span className="font-semibold text-[#11604b]">
               Flexible, assessment-based approach.
             </span>{" "}
-            Every session is shaped around your environment — from staff training and student mental
+            Every session is shaped around your environment  from staff training and student mental
             health days to curriculum-linked wellbeing workshops.
           </li>
 
@@ -239,7 +239,7 @@ function EducationWhyItMatters() {
           className="font-body text-[#062016]/90 text-lg md:text-xl"
           data-aos="fade-up"
         >
-          Our goal is to make wellbeing a natural part of education — not an add-on, but a
+          Our goal is to make wellbeing a natural part of education  not an add-on, but a
           foundation that helps everyone thrive.
         </p>
 

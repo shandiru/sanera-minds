@@ -11,7 +11,7 @@ export default function AboutContent(){
         <p>
           <span className="font-semibold text-[var(--brand-teal)]">Sanera Minds</span> (which means
           the new era of mental wellbeing) was born from a simple idea: mental health education
-          should be practical, engaging, and actually helpful — not something you forget five
+          should be practical, engaging, and actually helpful  not something you forget five
           minutes after the webinar ends.
         </p>
 
@@ -19,7 +19,7 @@ export default function AboutContent(){
           Our seminars and workshops are grounded in{' '}
           <span className="font-semibold text-[var(--brand-teal)]">CBT (Cognitive Behavioural Therapy)</span>,
           one of the most effective, hands-on approaches to improving mental wellbeing. Everything we
-          teach is designed to be put into practice right away — whether you’re navigating stress at
+          teach is designed to be put into practice right away  whether you’re navigating stress at
           work, managing anxiety, or supporting others.
         </p>
       </div>

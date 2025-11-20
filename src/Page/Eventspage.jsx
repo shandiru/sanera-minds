@@ -71,7 +71,7 @@ function WorkshopIntro() {
           data-aos="fade-up"
         >
           Whether you’re hosting an event, planning a team away day, organising a unique weekend,
-          or just want to bring your circle together for something different — our workshops
+          or just want to bring your circle together for something different  our workshops
           are grounded, practical, and genuinely uplifting.
         </p>
 
@@ -160,7 +160,7 @@ function WorkshopFormats() {
 >
   Whether it’s a team offsite, a wellness event, or an intimate gathering, our
   sessions create space to pause, connect, and recharge. Wellbeing is not
-  one-size-fits-all — and neither are we.
+  one-size-fits-all  and neither are we.
 </p>
 
 
@@ -182,7 +182,7 @@ function WorkshopExpect() {
     "Topics like stress, self-worth, confidence, boundaries, emotional regulation, and more.",
     "Customisable content so you can pick the topics that match your group’s vibe.",
     "A CBT-based toolkit with exercises you can actually use in everyday life.",
-    "Flexible formats from Zoom workshops to in-person sessions — in your space or ours.",
+    "Flexible formats from Zoom workshops to in-person sessions  in your space or ours.",
   ]
 
   return (
@@ -229,9 +229,9 @@ function WorkshopClosing() {
           className="font-body text-[#062016]/90 text-lg md:text-xl leading-relaxed mb-6"
           data-aos="fade-up"
         >
-          Whether it’s a team offsite, a wellness event, or a gathering with friends — our sessions
+          Whether it’s a team offsite, a wellness event, or a gathering with friends  our sessions
           are designed to bring people together in a meaningful way. Each experience is tailored to
-          your group — offering space to pause, connect, and recharge. Because wellbeing isn’t
+          your group  offering space to pause, connect, and recharge. Because wellbeing isn’t
           one-size-fits-all, and neither are we.
         </p>
 

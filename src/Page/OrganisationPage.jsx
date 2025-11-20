@@ -63,19 +63,19 @@ function OrgIntro() {
         >
           Mental Wellbeing Workshops for Organisations
         </h2>
-
+{/* 
         <p
           className="font-body text-[#062016]/90 text-lg md:text-xl leading-relaxed"
           data-aos="fade-up"
         >
           Because when people thrive, so does the workplace.
-        </p>
+        </p> */}
 
         <p
           className="org-para font-body text-[#062016]/90 text-lg md:text-xl leading-relaxed"
           data-aos="fade-up"
         >
-          Our therapist-led workshops help organisations create healthier, more connected teams —
+          Our therapist-led workshops help organisations create healthier, more connected teams 
           reducing stress, preventing burnout, and building a culture where wellbeing isn’t just a
           buzzword, it’s part of how you work.
         </p>
@@ -118,11 +118,11 @@ function OrgExpect() {
     </>,
     <>
       <span className="font-semibold text-[#11604b]">Flexible formats.</span>{" "}
-      From 60–90 minute virtual sessions to full-day training — whatever works for your team.
+      From 60–90 minute virtual sessions to full-day training  whatever works for your team.
     </>,
     <>
       <span className="font-semibold text-[#11604b]">E-learning: supporting life’s hardest moments.</span>{" "}
-      Modules on grief, loss, miscarriage, infertility, illness and more — compassionate, private, and
+      Modules on grief, loss, miscarriage, infertility, illness and more  compassionate, private, and
       accessible anytime.
     </>,
   ]
@@ -172,7 +172,7 @@ function OrgWhyItMatters() {
           className="org-why font-body text-[#062016]/90 text-lg md:text-xl leading-relaxed"
           data-aos="fade-up"
         >
-          Mental health isn’t separate from performance — it drives it.
+          Mental health isn’t separate from performance  it drives it.
         </p>
 
         <ul
@@ -188,7 +188,7 @@ function OrgWhyItMatters() {
           className="org-why font-body text-[#062016]/90 text-lg md:text-xl"
           data-aos="fade-up"
         >
-          Supporting mental health isn’t just kindness — it’s smart business.
+          Supporting mental health isn’t just kindness  it’s smart business.
         </p>
 
       </div>
@@ -210,7 +210,7 @@ function OrgClosing() {
         data-aos="fade-up"
       >
         Whether you’re a small business or a large organisation, our goal is to help you build a
-        workplace where people feel supported, capable, and calm — even during the busiest times.
+        workplace where people feel supported, capable, and calm  even during the busiest times.
       </p>
 
       <h3

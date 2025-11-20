@@ -9,7 +9,7 @@ export default function AboutContentWithImage() {
           </h2>
           <p>
             Sanera Minds was born from the belief that mental health learning should be practical,
-            engaging, and deeply human. Too often, education feels like ticking boxes — we wanted
+            engaging, and deeply human. Too often, education feels like ticking boxes  we wanted
             something that truly transforms lives.
           </p>
           <p>
