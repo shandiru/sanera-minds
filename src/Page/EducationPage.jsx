@@ -63,7 +63,7 @@ function EducationIntro() {
           className="font-body text-[#062016]/90 text-lg md:text-xl leading-relaxed"
           data-aos="fade-up"
         >
-           learning starts with feeling safe, supported, and seen.
+           Learning starts with feeling safe, supported, and seen.
         </p> 
 
         <p
