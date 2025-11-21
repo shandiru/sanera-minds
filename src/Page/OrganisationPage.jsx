@@ -63,13 +63,13 @@ function OrgIntro() {
         >
           Mental Wellbeing Workshops for Organisations
         </h2>
-{/* 
+ 
         <p
           className="font-body text-[#062016]/90 text-lg md:text-xl leading-relaxed"
           data-aos="fade-up"
         >
-          Because when people thrive, so does the workplace.
-        </p> */}
+           When people thrive, so does the workplace.
+        </p> 
 
         <p
           className="org-para font-body text-[#062016]/90 text-lg md:text-xl leading-relaxed"

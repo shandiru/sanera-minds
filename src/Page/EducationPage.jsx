@@ -59,12 +59,12 @@ function EducationIntro() {
           Mental Wellbeing Workshops for Nurseries, Schools & Universities
         </h2>
 
-        {/* <p
+         <p
           className="font-body text-[#062016]/90 text-lg md:text-xl leading-relaxed"
           data-aos="fade-up"
         >
-          Because learning starts with feeling safe, supported, and seen.
-        </p> */}
+           learning starts with feeling safe, supported, and seen.
+        </p> 
 
         <p
           className="font-body text-[#062016]/90 text-lg md:text-xl leading-relaxed"
@@ -152,7 +152,7 @@ function EducationExpect() {
             <span className="font-semibold text-[#11604b]">
               A vision for wellbeing woven into education.
             </span>{" "}
-            Because when wellbeing is part of the learning environment, every child and adult feels
+             When wellbeing is part of the learning environment, every child and adult feels
             seen, supported, and safe to grow.
           </li>
 
