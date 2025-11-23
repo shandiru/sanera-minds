@@ -12,8 +12,14 @@ export default function Header() {
       {/* MOBILE BAR */}
       <div className="lg:hidden grid grid-cols-[1fr_auto_1fr] items-center px-5 py-3">
         <span />
+
+        {/* MOBILE LOGO */}
         <a href="/" className="justify-self-center flex flex-col items-center">
-          <img src="/logo png.png" alt="Sanera Minds" className="h-10 sm:h-16 w-auto" />
+          <img
+            src="/logo png.png"
+            alt="Sanera Minds"
+            className="h-10 sm:h-16 w-auto drop-shadow-md"
+          />
           <span className="-mt-1 text-xs sm:text-sm tracking-[0.08em] text-center font-bold text-[#0a3d2f]">
             EMPOWERING A NEW ERA OF MENTAL WELLNESS
           </span>
@@ -31,12 +37,11 @@ export default function Header() {
       </div>
 
       {/* DESKTOP NAV */}
-      <div className="hidden lg:flex flex-col items-center max-w-7xl mx-auto">
+      <div className="hidden lg:flex flex-col items-center max-w-full mx-auto md:mx-10">
         <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-6 min-h-24 px-6 w-full">
 
           {/* LEFT NAV */}
           <nav className="hidden lg:flex items-center gap-9">
-
             <a
               href="/"
               className="px-3 py-2 rounded-md uppercase tracking-[0.18em] text-[15px] font-bold text-[#0a3d2f] hover:bg-[#0a3d2f] hover:text-white transition"
@@ -61,7 +66,6 @@ export default function Header() {
                     { label: 'Organisations', href: '/services/organisation' },
                     { label: 'Education', href: '/services/education' },
                     { label: 'Events', href: '/services/events' },
-                    // { label: 'Resources', href: '/services/resources' },
                     { label: 'Contact us', href: '/contact' },
                   ].map((item) => (
                     <li key={item.label}>
@@ -85,14 +89,17 @@ export default function Header() {
             </a>
           </nav>
 
-          {/* CENTER LOGO */}
+          {/* DESKTOP LOGO */}
           <a href="/" className="flex items-center justify-center shrink-0">
-            <img src="/logo png.png" alt="Sanera Minds" className="h-10 lg:h-8 xl:h-10 w-auto" />
+            <img
+              src="/logo png.png"
+              alt="Sanera Minds"
+              className="h-14 lg:h-16 xl:h-[75px] w-auto drop-shadow-lg"
+            />
           </a>
 
-          {/* RIGHT NAV (BALANCED AFTER REMOVING FAQ) */}
+          {/* RIGHT NAV */}
           <nav className="hidden lg:flex items-center gap-9 justify-end">
-
             <a
               href="/contact"
               className="px-3 py-2 rounded-md uppercase tracking-[0.18em] text-[15px] font-bold text-[#0a3d2f] hover:bg-[#0a3d2f] hover:text-white transition"
@@ -124,7 +131,6 @@ export default function Header() {
         }`}
       >
         <nav className="flex flex-col py-2">
-
           <a href="/" className="px-6 py-3 uppercase tracking-[0.18em] text-[14px] font-bold text-[#0a3d2f]">
             Home
           </a>
@@ -143,7 +149,6 @@ export default function Header() {
               { label: 'Organisations', href: '/services/organisation' },
               { label: 'Education', href: '/services/education' },
               { label: 'Events', href: '/services/events' },
-              // { label: 'Resources', href: '/services/resources' },
               { label: 'Contact us', href: '/contact' },
             ].map((item) => (
               <a
