@@ -13,7 +13,6 @@ export default function Header() {
       <div className="lg:hidden grid grid-cols-[1fr_auto_1fr] items-center px-5 py-3">
         <span />
 
-        {/* MOBILE LOGO */}
         <a href="/" className="justify-self-center flex flex-col items-center">
           <img
             src="/logo png.png"
@@ -25,7 +24,6 @@ export default function Header() {
           </span>
         </a>
 
-        {/* Burger */}
         <button
           onClick={() => setOpenMobile(!openMobile)}
           className="justify-self-end inline-flex flex-col items-center justify-center w-11 h-11 gap-1.5 ml-4"
@@ -37,23 +35,23 @@ export default function Header() {
       </div>
 
       {/* DESKTOP NAV */}
-      <div className="hidden lg:flex flex-col items-center max-w-full mx-auto md:mx-10">
-        <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-6 min-h-24 px-6 w-full">
+      <div className="hidden lg:flex flex-col items-center max-w-full mx-auto md:mx-6">
+
+        <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-4 min-h-24 px-6 w-full">
 
           {/* LEFT NAV */}
-          <nav className="hidden lg:flex items-center gap-9">
+          <nav className="hidden lg:flex items-center gap-6 lg:gap-10 xl:gap-20 mt-0">
             <a
               href="/"
-              className="px-3 py-2 rounded-md uppercase tracking-[0.18em] text-[15px] font-bold text-[#0a3d2f] hover:bg-[#0a3d2f] hover:text-white transition"
+              className="px-3 py-2 rounded-md uppercase tracking-[0.15em] text-[16px] font-bold text-[#0a3d2f] hover:bg-[#0a3d2f] hover:text-white transition"
             >
               Home
             </a>
 
-            {/* Services */}
             <div className="relative">
               <button
                 onClick={() => setOpenServices(!openServices)}
-                className={`px-3 py-2 rounded-md uppercase tracking-[0.18em] text-[15px] font-bold transition 
+                className={`px-3 py-2 rounded-md uppercase tracking-[0.15em] text-[16px] font-bold transition 
                   ${openServices ? 'bg-[#0a3d2f] text-white' : 'text-[#0a3d2f] hover:bg-[#0a3d2f] hover:text-white'}
                 `}
               >
@@ -62,7 +60,7 @@ export default function Header() {
 
               {openServices && (
                 <ul className="absolute left-0 mt-3 min-w-64 rounded-xl border border-[#0a3d2f]/25 bg-white shadow-xl p-2 z-50">
-                  {[
+                  {[ 
                     { label: 'Organisations', href: '/services/organisation' },
                     { label: 'Education', href: '/services/education' },
                     { label: 'Events', href: '/services/events' },
@@ -80,44 +78,38 @@ export default function Header() {
                 </ul>
               )}
             </div>
-
-            <a
-              href="/about"
-              className="px-3 py-2 rounded-md uppercase tracking-[0.18em] text-[15px] font-bold text-[#0a3d2f] hover:bg-[#0a3d2f] hover:text-white transition"
-            >
-              About us
-            </a>
           </nav>
 
-          {/* DESKTOP LOGO */}
+          {/* LOGO */}
           <a href="/" className="flex items-center justify-center shrink-0">
             <img
               src="/logo png.png"
               alt="Sanera Minds"
-              className="h-14 lg:h-16 xl:h-[75px] w-auto drop-shadow-lg"
+              className="h-12 lg:h-10 xl:h-[70px] w-auto drop-shadow-lg"
             />
           </a>
 
           {/* RIGHT NAV */}
-          <nav className="hidden lg:flex items-center gap-9 justify-end">
+          <nav className="hidden lg:flex items-center justify-end gap-6 lg:gap-10 xl:gap-20 mt-0">
+
             <a
-              href="/contact"
-              className="px-3 py-2 rounded-md uppercase tracking-[0.18em] text-[15px] font-bold text-[#0a3d2f] hover:bg-[#0a3d2f] hover:text-white transition"
+              href="/about"
+              className="px-3 py-2 rounded-md uppercase tracking-[0.15em] text-[16px] font-bold text-[#0a3d2f] hover:bg-[#0a3d2f] hover:text-white transition"
             >
-              Contact us
+              About us
             </a>
 
             <a
               href="/contact"
-              className="px-5 py-3 rounded-lg uppercase tracking-[0.15em] text-[15px] font-bold bg-[#0a3d2f] text-white hover:opacity-90 transition"
+              className="px-3 py-2 rounded-md uppercase tracking-[0.15em] text-[16px] font-bold text-[#0a3d2f] hover:bg-[#0a3d2f] hover:text-white transition"
             >
-              Book Now
+              Contact us
             </a>
           </nav>
         </div>
 
         {/* SLOGAN */}
-        <div className="-mt-4 mb-3">
+        <div className="-mt-3 mb-3">
           <p className="text-[15px] lg:text-[16px] tracking-[0.08em] text-center font-bold text-[#0a3d2f]">
             EMPOWERING A NEW ERA OF MENTAL WELLNESS
           </p>
@@ -135,7 +127,6 @@ export default function Header() {
             Home
           </a>
 
-          {/* Mobile Services */}
           <button
             onClick={() => setOpenMobileServices(!openMobileServices)}
             className="px-6 py-3 text-left uppercase tracking-[0.18em] text-[14px] font-bold text-[#0a3d2f] flex items-center justify-between"
@@ -167,13 +158,6 @@ export default function Header() {
 
           <a href="/contact" className="px-6 py-3 uppercase tracking-[0.18em] text-[14px] font-bold text-[#0a3d2f]">
             Contact us
-          </a>
-
-          <a
-            href="/contact"
-            className="mx-6 my-3 text-center px-4 py-3 rounded-lg uppercase tracking-[0.15em] text-[15px] font-bold bg-[#0a3d2f] text-white hover:opacity-90 transition"
-          >
-            Book Now
           </a>
         </nav>
       </div>
