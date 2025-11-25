@@ -2,6 +2,7 @@
 import React, { useEffect } from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
+import { motion } from "framer-motion";
 
 /* =========================
    Init AOS Hook
@@ -154,8 +155,11 @@ function OrgExpect() {
 /* =========================
    4) Why It Matters
    ========================= */
+
+
+
 function OrgWhyItMatters() {
-  useAOS()
+  useAOS();
 
   return (
     <section className="bg-[#eff0ea] py-16 px-6 text-center">
@@ -172,29 +176,55 @@ function OrgWhyItMatters() {
           className="org-why font-body text-[#062016]/90 text-lg md:text-xl leading-relaxed"
           data-aos="fade-up"
         >
-          Mental health isn’t separate from performance  it drives it.
+          Mental health isn’t separate from performance — it drives it.
         </p>
 
-        <ul
-          className="org-why font-body text-[#062016]/90 text-lg md:text-xl text-left list-disc list-inside space-y-2"
+        {/* --- IMAGE GRID WITH HOVER/ACTIVE ANIMATION --- */}
+        <div
+          className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-6"
           data-aos="fade-up"
         >
-          <li>Over 70 million workdays lost yearly due to stress, depression, and anxiety.</li>
-          <li>Financial cost to employers estimated at £56 billion annually.</li>
-          <li>Companies investing in wellbeing see a 5:1 return in productivity & retention.</li>
-        </ul>
+          {["/w1.png", "/w2.png", "/w3.png"].map((src, i) => (
+            <motion.div
+              key={i}
+              whileHover={{
+                y: -8,
+                scale: 1.03,
+                borderColor: "#11604b",
+              }}
+              whileTap={{
+                y: -8,
+                scale: 1.03,
+                borderColor: "#11604b",
+              }}
+              transition={{
+                duration: 0.22,
+                ease: "easeOut",
+              }}
+              className="border border-[#bfc8c5] rounded-xl overflow-hidden bg-white cursor-pointer"
+            >
+              <img
+                src={src}
+                alt={`Why It Matters ${i + 1}`}
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+          ))}
+        </div>
 
         <p
           className="org-why font-body text-[#062016]/90 text-lg md:text-xl"
           data-aos="fade-up"
         >
-          Supporting mental health isn’t just kindness  it’s smart business.
+          Supporting mental health isn’t just kindness — it’s smart business.
         </p>
 
       </div>
     </section>
-  )
+  );
 }
+
+
 
 /* =========================
    5) Closing CTA
